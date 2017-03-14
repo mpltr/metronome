@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Drill</title>
+	<style>
+		* {
+			padding:0;
+			margin:0;
+		}
+		html {
+			height: 100%;
+			width: 100%;
+		}
+		body {
+			background-color: #505050;
+			height: 100%;
+		  	display: flex;
+		  	align-items: center;
+		  	justify-content: center;
+		  	flex-direction: column;
+		 }
+		h1 {
+			color: white;
+			font-size: 100px;
+		}
+		.timer {
+			color: white;
+			font-size: 40px;
+		}
+
+		h2 {
+			display: inline-block;
+		}
+		
+	</style>
+</head>
+<body>
+	<h1 id="note">E</h1>
+	<div class="timer"><h2 class="seconds">00</h2>:<h2 class="mili">00</h2></div>
+<script>
+	//Notes
+	var notes = ["A","A#","B","C","C#","D","D#","E","F","F#","G","G#"];
+	function getNote(){
+		var currentNote = document.getElementById('note').innerText;
+		do {
+			var roll = Math.floor(Math.random() * 12);
+			var note = notes[roll];
+		} while (note == currentNote);
+		document.getElementById('note').innerText = note;
+	}
+
+	//Timer
+	var seconds = 07;
+	var mili    = 59;
+	document.getElementsByClassName('seconds')[0].innerText = seconds;
+	document.getElementsByClassName('mili')[0].innerText = mili;
+	// setInterval(function(){
+	// 	var currentMili = parseInt(document.getElementsByClassName('mili')[0].innerText);
+	// 	if(currentMili > 0){
+	// 		document.getElementsByClassName('mili')[0].innerText = currentMili - 1;
+	// 	} else {
+	// 		var currentSecond = parseInt(document.getElementsByClassName('seconds')[0].innerText);
+	// 		if(currentSecond > 0){
+	// 			document.getElementsByClassName('seconds')[0].innerText = currentSecond - 1;
+	// 			document.getElementsByClassName('mili')[0].innerText = mili;
+	// 		} else {
+	// 			document.getElementsByClassName('mili')[0].innerText = mili;
+	// 			document.getElementsByClassName('seconds')[0].innerText = seconds;
+	// 			getNote();
+	// 			var sound = new Audio('MetroBar1.wav');
+	// 			sound.play();
+	// 		}
+	// 	}
+		
+	// },16);
+
+</script>
+</body>
+</html>
