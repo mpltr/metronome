@@ -1,0 +1,100 @@
+/*GLOBALS*/
+
+* {
+	padding:0;
+	margin:0;
+}
+
+html {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	background-color: #505050;
+	height: 100%;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	flex-direction: column;
+}
+
+h1 {
+	color: white;
+	font-size: 100px;
+}
+
+h2, h3 {
+	display: inline-block;
+	color: white;
+	vertical-align: middle;
+}
+
+h3 {
+	font-weight: 100;
+}
+
+/*BMP CONTROL*/
+
+.bpm-control, .note-generator {
+	width: 100%;
+	max-width: 600px;
+	border: 1px solid white;
+	padding: 50px;
+	text-align: center;
+	margin: 10px 0 10px 0;
+}
+
+.bpm-slide {
+	width: 83%;
+	vertical-align: middle;
+}
+
+.bpm-display {
+	display: block;
+	padding: 10px;
+	width: 50px;
+	text-align: center;
+	font-size: 20px;
+	margin: auto;
+	margin-top: 15px;
+}
+
+.playStop {
+	display: block;
+	padding: 10px;
+	margin: auto;
+	margin-top: 15px;
+}
+
+/*NOTE GENERATOR*/
+
+.note-beat-change, .beat-offset {
+	width: 20px;
+	padding: 10px;
+	font-size: 20px;
+	text-align: center;
+}
+
+.note {
+	margin-bottom: 20px;
+}
+
+/*VISUALISER*/
+
+.visualiser {
+	width: 100%;
+	max-width: 400px;
+	height: 50px;
+	border: 1px solid white;
+	text-align: center;
+	margin: 10px 0 10px 0;
+
+}
+
+.note-block {
+	height: 100%;
+	width: calc(25% - 1px);
+	float: left;
+	border-right: 1px solid white;
+}
