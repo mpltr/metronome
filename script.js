@@ -92,7 +92,7 @@ playStop.addEventListener("click", function(){
 ///  MODULES  ///
 /////////////////
 
-// Notes
+// Note Generator
 var notes = ["A","A#","B","C","C#","D","D#","E","F","F#","G","G#"];
 
 function getNote(){
@@ -115,7 +115,7 @@ function checkNoteChange(currentBeat) {
 	
 }
 
-//visualiser
+// Visualiser
 function clearVisualiser(){
 	for(var i = 0; i < 4; i++){
 		noteBlock[i].style.backgroundColor = "#505050";

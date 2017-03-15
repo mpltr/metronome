@@ -2,24 +2,28 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Drill</title>
+	<title>Metro-Gnome</title>
 	<link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
+	<img src="gnome.png" alt="" class="gnome">
+	<h1 class="title">Metro-Gnome</h1>
 	<div class="visualiser">
 		<div class="note-block"></div>
 		<div class="note-block"></div>
 		<div class="note-block"></div>
 		<div class="note-block"></div>
 	</div>
-	<div class="bpm-control">
+	<div class="bpm-control module">
+		<h2 class="module-title">BMP Controller</h2>
 		<h3>40</h3>
 		<input type="range" min="40" max="180"  value="46" class="bpm-slide">
 		<h3>180</h3>
 		<input type="text" class="bpm-display" value="46">
 		<button class="playStop">Play</button>
 	</div>
-	<div class="note-generator">
+	<div class="note-generator module">
+		<h2 class="module-title">Note Generator</h2>
 		<h1 class="note">E</h1>
 		<h3>Change Note every</h3> <input type="text" class="note-beat-change" value="4"> <h3>beats with a </h3> <input type="text" class="beat-offset" value="0"> <h3> beat offset</h3>
 	</div>
